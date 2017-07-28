@@ -1,0 +1,137 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: Helvetica;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #777777;
+	display: flex;
+	flex-flow: column nowrap; 
+}
+
+h2 {
+	text-align: center;
+	color: #b71c1c;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+header {
+	min-height: 100px;
+	background-color: #cccccc;
+}
+
+footer {
+	min-height: 25px;
+	background-color: #444444;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+
+.checker-form {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	max-width: 800px;
+	min-width: 320px;
+}
+
+.checker-form * {
+	box-sizing: border-box;
+	font-size: 1em;
+}
+
+textarea {
+	width: 100%;
+	min-height: 150px;
+	padding: 20px;
+	color: inherit;
+	border-radius: 22px 0;
+	resize: none;
+	outline: none;
+	border: 1px solid #bbbbbb; 
+	background-color: #eeeeee;
+	transition: border-color .2s ease;
+}
+
+.focus {
+	border-color: #b71c1c; 
+}
+
+.locales {
+	display: flex;
+	margin-bottom: 10px;
+	align-self: flex-end;
+}
+
+.btn {
+	cursor: pointer;
+	outline: none;
+	font-size: 16px;
+	border: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	background-color: #b71c1c;
+	transition: background-color .2s ease;
+	min-width: 50px;
+	padding: 5px 0;
+}
+
+.btn.checked {
+	background-color: #7f0000;
+}
+
+.btn_ru {
+	border-radius: 22px 0 0 0;
+}
+
+.btn_en {
+	border-radius: 0 0 22px 0;
+}
+
+.btn_submit {
+	margin: 10px 0 40px 0;
+	padding: 15px 80px;
+	border-radius: 0 22px;
+	max-width: initial;
+	align-self: flex-end;
+}
+
+.btn_submit:hover {
+	background-color: #7f0000;
+}
+
+.result {
+	min-height: 150px;
+	width: 100%;
+	max-width: 800px;
+	font-size: 1em;
+	padding: 20px;
+	box-sizing: border-box;
+	color: inherit;
+	border-top: 1px solid #b71c1c;
+}
+
+.result .red {
+	background-color: #ffab00;
+	color: #ffffff;
+}
+
+.result p {
+	margin: 0;
+}
+
+.result p + p {
+	margin-top: 1em;
+}
